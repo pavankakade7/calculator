@@ -15,8 +15,6 @@ def division(num1,num2):
         print("{0} / {1} ={2}".format(num1,num2,result))
 
 
-
-
 while True:
     print("what do you want to do?")
     print("1 Addition")
@@ -24,18 +22,18 @@ while True:
     print("3 Multiplication")
     print("4 Division")
     print("If you want to quit press Q ")
-    
 
     choice=input("Enter your choice : ")
 
-   
+    if(choice=='q' or choice=='Q'):
+        break
+
 
     num1=float(input("enter the number 1 : "))
     num2=float(input("enter the number 2 : "))
 
-    if(choice=='q'or choice=='Q'):
-        break
-    elif(choice=='1'):
+   
+    if(choice=='1'):
         addition (num1,num2)
     elif(choice=='2'):
         subtraction (num1,num2)
